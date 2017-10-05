@@ -8,23 +8,38 @@
  *
  */
 #include <iostream>
+#include <string>
+#include "Sales_data.h"
 
 int main()
 {
     //std::cout<<"Hello World!"<<std::endl;
     //std::cout << /* " */ " /*" /* "*/ <<std::endl;
+    using db = double;
+    db k =100.0;
+
     int v1 = 0;
     for (long i =0 ;i <100;i++)
     {
         v1 = v1 +1;
     }
     std::cout << v1 <<std::endl;
-    std::cout << "Hello World!" <<std::endl;
+    std::cout << "Hello World!\n" ;
+    
+    long long i;
+    i = 10000000000;
+    
+    int j ;
+    int &jj = j;
+    
+    v1 = jj;
+    jj = 3.14;
+    std::cout << jj<< '\n';
+    
     int sum = 0;
-    while (std::cin >> v1)
-    {
-        sum = sum+v1;
-    }
-    std::cout << sum << std::endl;
+    
+    Sales_data si;
+    sum = si.add(1, 3);
+    std::cout<<sum<<std::endl;
     return 0;
 }
