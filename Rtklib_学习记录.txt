@@ -1,0 +1,67 @@
+Rtklib 其中有GUI 和 CUI 部分
+
+rnx2rtkp.c 是定位处理的CUI部分 提供了关于定位处理方面的接口
+
+其中gcc部分提供了makefile编译及运行 （掌握makefile使用方法  文本编辑器+编译器编写C++程序…………？？）
+
+interpolate
+dynamics velociy accel
+
+gtime_t (由于整数秒和小数秒部分组成 貌似表示的是GPS时……那为毛没有周数？？？？
+bosd_t 观测数据记录
+obs_t  观测数据记录节 （即包含了多个观测数据记录	
+nav_t  导航文件数据头文件部分
+
+pseudorange //伪距
+
+prcopt_t 数据处理选项类型
+solopt_t 解决选项类型
+filopt_t 文件选项类型
+rnxopt_t renix文件选项类型信息（即存储了renix文件信息……主要存储了头文件的信息
+ssat_t 卫星类型（这个有点迷？？？？？干哈的？？？
+ambc_t  ？？？？？？
+
+rtk_t （貌似是rtk处理部分综合选项部分....
+
+raw_t 接收机原始控制数据类型 （整合了很多东西……不过在干什么不清楚
+
+trace
+parameters
+conflicting types
+
+
+rnx2rtkp.c 
+
+写这种大型工程 习惯分模块编写 
+为方便调用外部函数 统一编写一个头文件 其中包括了所有的外部函数及引用
+
+strcmp函数 比较两个字符串的函数
+
+gcc的编译方法 一般都是 gcc [option] objectname sourcename
+如果要链接库需要通过 -lxxxx 来链接某个库  
+至于如何知道某个函数在哪个库这个目前不知道。。。。。。
+
+makefile 编写规则
+1、#开始的文字均为注释
+2、以反斜线/来表示一行的延续
+3、
+
+/*
+task:
+掌握makefile语法 为了弄够添加至xcode里进行编译  还有xcode 为毛不行进行文件的输入输出？？？？
+或者通过掌握gdb调试的方法 通过vi编辑器进行调试
+反正就是选一种方法进行调试 还是 这次单点定位的结果怎么这么奇怪
+
+能够调试后 应该看懂程序的流程没有多大的问题
+
+之后要开始将之前在window上的程序移植到mac上 
+算法方面难度应该不大 估计界面方面需要重写一小块
+
+*/
+
+主程序部分
+ main{
+
+elevation
+
+}

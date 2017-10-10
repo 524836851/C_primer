@@ -9,9 +9,9 @@
  */
 #include <iostream>
 #include <string>
-#include "Sales_data.h"
 
-int main()
+#include <fstream>
+int main(int argc, char* argv[])
 {
     //std::cout<<"Hello World!"<<std::endl;
     //std::cout << /* " */ " /*" /* "*/ <<std::endl;
@@ -38,8 +38,16 @@ int main()
     
     int sum = 0;
     
-    Sales_data si;
-    sum = si.add(1, 3);
+    
+    std::ofstream  log;
+    
+    log.open("result.txt");
+    log << "Hello World!" << std::endl;
+    
+    for (int i = 1;i<argc;i++)
+        std::cout << argv[i] <<std::endl;
+  //  Sales_data si;
+  //  sum = si.add(1, 3);
     std::cout<<sum<<std::endl;
     return 0;
 }
