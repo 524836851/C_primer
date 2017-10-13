@@ -47,6 +47,7 @@ makefile 编写规则
 3、
 
 /*
+
 task:
 掌握makefile语法 为了弄够添加至xcode里进行编译  还有xcode 为毛不行进行文件的输入输出？？？？
 或者通过掌握gdb调试的方法 通过vi编辑器进行调试

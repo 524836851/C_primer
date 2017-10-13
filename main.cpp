@@ -9,8 +9,15 @@
  */
 #include <iostream>
 #include <string>
-
 #include <fstream>
+#include <cmath>
+#include <string>
+#include <vector>
+
+using std::string;
+using std::cin;
+using std::cout;
+
 int main(int argc, char* argv[])
 {
     //std::cout<<"Hello World!"<<std::endl;
@@ -18,6 +25,24 @@ int main(int argc, char* argv[])
     using db = double;
     db k =100.0;
 
+    k = sin(k);
+    
+    const string str("Hello World!");
+    for (auto y:str)
+    {
+        y = toupper(y);
+        cout << y <<std::endl;
+    }
+    
+    std::vector <int> T;
+    int t;
+    while (cin >> t)
+    {
+        T.push_back(t);
+    }
+    
+    auto tt = T.size();
+    
     int v1 = 0;
     for (long i =0 ;i <100;i++)
     {
@@ -37,12 +62,15 @@ int main(int argc, char* argv[])
     std::cout << jj<< '\n';
     
     int sum = 0;
+    string s;
+    while (getline(cin,s))
+    {
+        cout << s << std::endl;
+    }
     
+    string::size_type x;
+    x = s.size();
     
-    std::ofstream  log;
-    
-    log.open("result.txt");
-    log << "Hello World!" << std::endl;
     
     for (int i = 1;i<argc;i++)
         std::cout << argv[i] <<std::endl;
