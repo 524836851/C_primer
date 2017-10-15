@@ -35,15 +35,23 @@ int main(int argc, char* argv[])
     }
     
     std::vector <int> T;
+    std::vector <int*> TT;
+    
     int t;
-    while (cin >> t)
-    {
-        T.push_back(t);
-    }
     
     auto tt = T.size();
+    char *ttt = nullptr;
+    
+    
+    for (auto b:T)
+    {
+        if ((b) % 2 != 0)
+            (b) = (b) + 1;
+    }
     
     int v1 = 0;
+
+    char a3[6] = "Hello";
     for (long i =0 ;i <100;i++)
     {
         v1 = v1 +1;
@@ -54,22 +62,21 @@ int main(int argc, char* argv[])
     long long i;
     i = 10000000000;
     
-    int j ;
-    int &jj = j;
-    
-    v1 = jj;
-    jj = 3.14;
-    std::cout << jj<< '\n';
+
     
     int sum = 0;
-    string s;
-    while (getline(cin,s))
-    {
-        cout << s << std::endl;
-    }
-    
+    string s = "Hello World!";
+
     string::size_type x;
     x = s.size();
+   int a[] = {0,1,2,3,4,5};
+    int *p = &a[2];
+    int j = p[0];
+    
+    cout << j <<std::endl;
+    
+    
+    
     
     
     for (int i = 1;i<argc;i++)
